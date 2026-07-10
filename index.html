@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<!-- ================= MODAL THREAT ================= -->
+<div id="threatModal" class="modal">
+    <div class="modal-content">
+
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+
+        <h2 id="modalTitle">🛡 PHISHING</h2>
+
+        <hr>
+        <p id="modalDescription"></p>
+
+        <h3>Ciri-ciri</h3>
+
+        <ul id="modalSigns"></ul>
+
+        <h3>Cara Menghindari</h3>
+
+        <ul id="modalPrevention"></ul>
+
+        <button class="close-btn" onclick="closeModal()">Tutup</button>
+
+    </div>
+</div>
+
+<body>
+
+<!-- ================= LOADING ================= -->
+<div id="loader">
+    <div class="loader-box">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        <h2>CyberShield Academy</h2>
+
+        <div class="loading-bar"><span></span></div>
+
+        <p>Initializing Security System...</p>
+
+    </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header id="header">
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<span>CyberShield</span>
+
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#threat">Threats</a></li>
+<li><a href="#lab">Cyber Lab</a></li>
+<li><a href="#quiz">Quiz</a></li>
+</ul>
+
+<div class="menu-right">
+
+<button id="darkMode"><i class="fa-solid fa-moon"></i></button>
+<button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+<div class="hero-left">
+
+<h4>WELCOME TO</h4>
+
+<h1>CyberShield<span>Academy</span></h1>
+
+<h2 id="typing"></h2>
+
+<p>Belajar keamanan digital secara interaktif.
+Kenali phishing, malware,
+password yang kuat,
+serta uji kemampuanmu melalui Cyber Mission.</p>
+
+<div class="hero-button">
+
+<a href="#about" class="btn-primary">Explore</a>
+
+<a href="#lab" class="btn-secondary">Cyber Lab</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="hero-circle"><i class="fa-solid fa-user-secret"></i></div>
+<div class="floating one"><i class="fa-solid fa-lock"></i></div>
+<div class="floating two"><i class="fa-solid fa-shield-halved"></i></div>
+<div class="floating three"><i class="fa-solid fa-bug"></i></div>
+
+</div>
+
+</section>
+
+<!-- ================= WAVE ================= -->
+<div class="wave">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+
+viewBox="0 0 1440 320">
+
+<path fill="#081b29"
+
+fill-opacity="1"
+
+d="M0,160L60,149.3C120,139,240,117,360,128C480,139,600,181,720,192C840,203,960,181,1080,160C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+
+</path>
+
+</svg>
+
+</div>
+
+<!-- ================= STATISTIC ================= -->
+<section class="statistics">
+
+<h2>Cyber Security Statistics</h2>
+
+<p>Ancaman siber terus meningkat setiap tahun.
+Mari tingkatkan kesadaran keamanan digital.</p>
+
+<div class="stats-container">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-lock"></i>
+
+<h3 class="counter"data-target="81">0</h3>
+
+<span>%</span>
+
+<h4>Weak Password</h4>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-fish"></i>
+
+<h3 class="counter"data-target="36">0</h3>
+
+<span>%</span>
+
+<h4>Phishing Attack</h4>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-database"></i>
+
+<h3 class="counter"data-target="65">0</h3>
+
+<span>%</span>
+
+<h4>Data Breach</h4>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-virus"></i>
+
+<h3 class="counter"data-target="58">0</h3>
+
+<span>%</span>
+
+<h4>Malware</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+
+    <div class="section-title">
+
+        <span>ABOUT CYBER SECURITY</span>
+
+        <h2>Protect Your Digital World</h2>
+
+        <p>
+            Cyber Security adalah proses melindungi perangkat,
+            jaringan, akun, dan data dari berbagai ancaman digital.
+            Di era digital, keamanan informasi menjadi kebutuhan utama
+            bagi individu maupun organisasi.
+        </p>
+
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-card">
+
+            <i class="fa-solid fa-user-lock"></i>
+
+            <h3>Data Protection</h3>
+
+            <p>
+                Melindungi informasi pribadi agar tidak dicuri,
+                disalahgunakan, maupun diakses oleh pihak yang tidak
+                berwenang.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <i class="fa-solid fa-network-wired"></i>
+
+            <h3>Network Security</h3>
+
+            <p>
+                Mengamankan jaringan internet dari penyusup,
+                malware, serta berbagai bentuk serangan siber.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <i class="fa-solid fa-cloud"></i>
+
+            <h3>Cloud Security</h3>
+
+            <p>
+                Menjaga data yang tersimpan pada cloud agar tetap aman
+                melalui enkripsi dan autentikasi berlapis.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY SECURITY ================= -->
+
+<section class="why-security">
+
+<div class="left">
+
+<h2>Mengapa Cyber Security Penting?</h2>
+
+<p>
+Setiap hari jutaan data dicuri melalui phishing,
+malware,
+dan kebocoran informasi.
+
+Tanpa keamanan digital,
+akun media sosial,
+rekening bank,
+hingga data pribadi dapat disalahgunakan.
+</p>
+
+<ul>
+
+<li><i class="fa-solid fa-check"></i>Melindungi Data Pribadi</li>
+<li><i class="fa-solid fa-check"></i>Menghindari Penipuan Online</li>
+<li><i class="fa-solid fa-check"></i>Mengamankan Akun Digital</li>
+<li><i class="fa-solid fa-check"></i>Mengurangi Risiko Kebocoran Data</li>
+
+</ul>
+
+</div>
+
+<div class="right">
+
+<div class="security-circle">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= THREATS ================= -->
+
+<section class="threat" id="threat">
+
+<div class="section-title">
+
+<span>CYBER THREATS</span>
+
+<h2>Kenali Ancaman Siber</h2>
+
+<p>Pelajari ancaman yang paling sering menyerang pengguna internet.</p>
+
+</div>
+
+<div class="threat-grid">
+
+<div class="threat-card">
+
+<div class="icon">
+
+<i class="fa-solid fa-fish"></i>
+
+</div>
+
+<h3>Phishing</h3>
+
+<p>Penipuan digital dengan menyamar sebagai pihak terpercaya
+untuk mencuri username, password, OTP, dan informasi penting lainnya.</p>
+
+<button onclick="showThreat('phishing')">Pelajari</button>
+
+</div>
+
+<div class="threat-card">
+
+<div class="icon">
+
+<i class="fa-solid fa-virus"></i>
+
+</div>
+
+<h3>Malware</h3>
+
+<p>Program berbahaya yang dapat merusak sistem,
+mencuri data, hingga mengambil alih komputer korban.</p>
+
+<button onclick="showThreat('malware')">Pelajari</button>
+
+</div>
+
+<div class="threat-card">
+
+<div class="icon">
+
+<i class="fa-solid fa-lock"></i>
+
+</div>
+
+<h3>Ransomware</h3>
+
+<p>Serangan yang mengenkripsi seluruh file
+kemudian meminta tebusan agar data dapat dipulihkan.</p>
+
+<button onclick="showThreat('ransomware')">Pelajari</button>
+
+</div>
+
+<div class="threat-card">
+
+<div class="icon">
+
+<i class="fa-solid fa-user-secret"></i>
+
+</div>
+
+<h3>Social Engineering</h3>
+
+<p>Teknik manipulasi psikologis yang membuat korban
+memberikan informasi rahasia secara sukarela.</p>
+
+<button onclick="showThreat('social')">Pelajari</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TIMELINE ================= -->
+
+<section class="timeline">
+
+<div class="section-title">
+
+<span>CYBER ATTACK FLOW</span>
+
+<h2>Bagaimana Serangan Terjadi?</h2>
+
+</div>
+
+<div class="timeline-container">
+
+<div class="timeline-item">
+
+<div class="number">1
+
+</div>
+
+<h3>Email / Pesan Masuk</h3>
+
+<p>Korban menerima email atau pesan mencurigakan.</p>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="number">2
+
+</div>
+
+<h3>Klik Link</h3>
+
+<p>Korban membuka tautan tanpa memeriksa alamat website.</p>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="number">3
+
+</div>
+
+<h3>Masukkan Data</h3>
+
+<p>Korban memasukkan username,
+password,
+atau OTP.</p>
+
+</div>
+
+<div class="timeline-item">
+<div class="number">4
+
+</div>
+
+<h3>Data Dicuri</h3>
+
+<p>Informasi pribadi berhasil dicuri oleh penyerang.</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= CYBER LAB ================= -->
+
+<section class="cyber-lab" id="lab">
+
+    <div class="section-title">
+
+        <span>CYBER LAB</span>
+
+        <h2>Belajar Melalui Simulasi</h2>
+
+        <p>Cobalah berbagai alat sederhana untuk memahami pentingnya keamanan digital.</p>
+
+    </div>
+
+    <div class="lab-container">
+
+        <!-- Password Checker -->
+
+        <div class="lab-card">
+
+            <i class="fa-solid fa-key"></i>
+
+            <h3>Password Strength Checker</h3>
+
+            <p>Masukkan password dan lihat tingkat keamanannya.</p>
+
+            <input type="password" id="passwordInput" placeholder="Masukkan Password">
+
+            <div class="strength-bar">
+
+                <div id="strength"></div>
+
+            </div>
+
+            <h4 id="strengthText">
+
+                Password belum diperiksa
+
+            </h4>
+
+        </div>
+
+        <!-- Password Generator -->
+        <div class="lab-card">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            <h3>Password Generator</h3>
+
+            <p>Klik tombol untuk menghasilkan password yang kuat.</p>
+
+            <input type="text" id="generatedPassword" readonly>
+
+            <button onclick="generatePassword()">Generate Password</button>
+
+            <button onclick="copyPassword()">Copy Password </button>
+
+        </div>
+
+        <!-- Website Checker -->
+
+        <div class="lab-card">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <h3>Website Security Checker</h3>
+
+            <p>Periksa apakah website menggunakan HTTPS.</p>
+
+            <input type="text" id="websiteInput" placeholder="https://example.com">
+
+            <button onclick="checkWebsite()">Check Website</button>
+
+            <h4 id="websiteResult"></h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= EMAIL PHISHING ================= -->
+
+<section class="phishing-simulation">
+
+<div class="section-title">
+
+<span>PHISHING SIMULATION</span>
+
+<h2>Apakah Email Ini Aman?</h2>
+
+<p>Pilih jawaban yang menurutmu benar.</p>
+
+</div>
+
+<div class="email-box">
+
+<div class="email-header">
+
+<h3>📧 Bank Nasional Indonesia</h3>
+
+<p>Subject : Akun Anda Akan Diblokir</p>
+
+</div>
+
+<div class="email-body">
+
+<p>Yth. Nasabah,</p>
+
+<p>Akun Anda akan diblokir dalam waktu 24 jam.
+Silakan login melalui link berikut.</p>
+
+<p class="danger-link">http://bank-indonesia-security.xyz</p>
+
+<p>Terima kasih.</p>
+
+</div>
+
+<div class="email-button">
+<button onclick="checkEmail(true)">✅ Aman</button>
+<button onclick="checkEmail(false)">❌ Phishing</button>
+</div>
+
+<div id="emailResult"></div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PASSWORD TIPS ================= -->
+
+<section class="password-tips">
+
+<div class="section-title">
+
+<span>SECURITY TIPS</span>
+<h2>Password yang Aman</h2>
+
+</div>
+
+<div class="tips-grid">
+
+<div class="tips-card">
+<i class="fa-solid fa-check"></i>Gunakan minimal 12 karakter.
+</div>
+
+<div class="tips-card">
+<i class="fa-solid fa-check"></i>Gabungkan huruf besar dan kecil.
+</div>
+
+<div class="tips-card">
+<i class="fa-solid fa-check"></i>Tambahkan angka.
+</div>
+
+<div class="tips-card">
+<i class="fa-solid fa-check"></i>Gunakan simbol seperti @ # $ %.
+</div>
+
+<div class="tips-card">
+<i class="fa-solid fa-check"></i>Jangan gunakan tanggal lahir.
+</div>
+
+<div class="tips-card">
+<i class="fa-solid fa-check"></i>Gunakan password berbeda untuk setiap akun.
+</div>
+
+</div>
+
+</section>
+<!-- ================= QUIZ ================= -->
+
+<section class="quiz" id="quiz">
+
+    <div class="section-title">
+
+        <span>CYBER QUIZ</span>
+
+        <h2>Uji Pengetahuanmu</h2>
+
+        <p>
+            Jawab pertanyaan berikut untuk mengetahui
+            seberapa paham kamu mengenai Cyber Security.
+        </p>
+
+    </div>
+
+    <div class="quiz-box">
+
+        <div class="quiz-progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <h3 id="question">Loading Question...</h3>
+
+        <div class="answer-container">
+            <button class="answer-btn" onclick="checkAnswer(0)"></button>
+            <button class="answer-btn" onclick="checkAnswer(1)"></button>
+            <button class="answer-btn" onclick="checkAnswer(2)"></button>
+            <button class="answer-btn" onclick="checkAnswer(3)"></button>
+        </div>
+
+        <button id="nextQuestion">Next Question</button>
+
+    </div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq">
+
+<div class="section-title">
+
+<span>FAQ</span>
+<h2>Frequently Asked Questions</h2>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<button class="accordion">Apa itu Phishing?</button>
+
+<div class="panel">
+
+<p>Phishing merupakan penipuan digital
+yang bertujuan mencuri informasi penting
+melalui email,
+website,
+atau pesan palsu.</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="accordion">Mengapa Password Harus Kuat?</button>
+
+<div class="panel">
+
+<p>Password yang kuat lebih sulit ditebak
+sehingga akun lebih aman.</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="accordion">Apa Fungsi OTP?</button>
+
+<div class="panel">
+
+<p>OTP memberikan lapisan keamanan tambahan
+ketika login.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CHATBOT ================= -->
+
+<div id="chatbot">
+
+<div id="chat-header">
+
+🛡 CyberBot
+
+</div>
+
+<div id="chat-content">
+
+<p>
+Halo!
+Saya CyberBot.
+Silakan pilih topik.
+</p>
+
+<button onclick="chatBot('password')">Password</button>
+<button onclick="chatBot('phishing')">Phishing</button>
+<button onclick="chatBot('malware')">Malware</button>
+<button onclick="chatBot('otp')">OTP</button>
+
+<div id="chatAnswer"></div>
+
+</div>
+
+</div>
+
+<button id="chatButton">
+
+💬
+</button>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-left">
+
+<h2><i class="fa-solid fa-shield-halved"></i>CyberShield Academy</h2>
+
+<p>Learn Today, Stay Secure Tomorrow.</p>
+
+</div>
+
+<div class="footer-center">
+<h3>Quick Links</h3>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#lab">Cyber Lab</a>
+<a href="#quiz">Quiz</a>
+</div>
+
+<div class="footer-box">
+
+    <h3>👨‍💻 Profil Pembuat</h3>
+    <p><strong>Nama :</strong> Aisa Putri</p>
+    <p><strong>NIM :</strong> 2402310188</p>
+    <p><strong>Prodi :</strong> Informatika</p>
+    <p><strong>Universitas :</strong> Universitas Bahaudin Mudhary Madura</p>
+
+</div>
+
+<div class="footer-right">
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+<p>
+
+© 2026 CyberShield Academy
+
+Made with ❤️ for Cyber Security Education
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
